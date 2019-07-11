@@ -1,0 +1,797 @@
+/****** CORE *****/
+
+:root {
+    --medium-purple: #8f54aa;
+    --dark-lavender: #88629a;
+    
+    --very-light-pink: #f3f3f3;
+    --light-grey: #7f7f7f;
+    --light-grey: #666666;
+    --mid-grey: #444444;
+    --light-black: #1f2432;
+    --black: #000000;
+  }
+
+
+.light-grey {
+  color: var(--light-grey);
+}
+
+.mid-grey {
+  color: var(--mid-grey);
+}
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+/****** GENERAL *****/
+
+.page-container {
+    width: 100%;
+  }
+
+.flex-container{
+  display:flex;
+  flex-direction:row;
+}
+
+.flex-container > span{
+  flex-grow:1; 
+}
+
+.flex-container > .flex-item{
+  flex-grow:0;
+  width:50%;
+}
+
+.flex-container > .pad-left{
+  padding-left: 8%;
+}
+
+/****** NAV BAR *****/
+
+  .Nav-Bar--logo {
+    margin-left: 4.25rem;
+    width: 220px;
+  }
+
+  .Nav-Bar--li {
+    height: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: var(--mid-grey);
+    text-transform: uppercase;
+    margin-left: 5rem;
+  }
+
+  .Nav-Bar--CTA {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 2px var(--dark-lavender);
+    background-color: var(--dark-lavender);
+    margin: 0rem 5rem;
+  }
+
+  .Nav-Bar--CTA--Text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+
+/****** HERO SECTION *****/
+  .Hero-Container {
+    
+  }
+
+  .Hero--Left {
+    padding-top: 8rem;
+  }
+
+  .Hero--Right {
+
+  }
+
+  .Hero--H1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 0.11125rem;
+    color: var(--mid-grey);
+  }
+
+  .Hero--Desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.58;
+    letter-spacing: normal;
+    color: var(--mid-grey);
+    margin-top: 3rem;
+  }
+
+  .Hero-CTA {
+    background-color: var(--medium-purple);
+    width: 20rem;
+    margin-top: 2rem;
+  }
+
+  .CTA--Text {
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    font-size: 21px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 17px 72px;
+  }
+
+  .Hero-Image {
+    float: right; 
+  }
+
+  /****** SECTION ******/
+
+  @media (min-width: 576px) {
+    .Alternate-BG {
+      padding: 4rem 2rem;
+  } 
+  }
+
+.Section--Outer {
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Section-Alter-Bg {
+  background-color: var(--very-light-pink);
+}
+
+.Section--Container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Tight {
+  max-width: 960px;
+}
+
+.Section-Heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.2225rem;
+  text-align: center;
+  color: var(--mid-grey);
+  text-transform: uppercase;
+  margin: 0rem 0rem;
+}
+
+.Section-Para {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+/**** TEAM ****/
+
+.Team-Heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.111rem;
+  text-align: center;
+  color: var(--mid-grey);
+  text-transform: uppercase;
+  margin: 0rem 0rem;
+}
+
+.Team-Para {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+
+.Team-Members--Row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 24rem;
+}
+
+.Team-Members--Avatar {
+  margin-bottom: 2rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Team-Members--Name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--black);
+}
+
+.Team-Members--Desc {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+
+/**** VALUES ****/
+
+.Values--Outer {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Values-Alter-Bg {
+background-color: var(--very-light-pink);
+}
+
+.Values--Container {
+margin-right: auto;
+margin-left: auto;
+}
+
+.Values-Heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.111rem;
+  text-align: center;
+  color: var(--mid-grey);
+  text-transform: uppercase;
+  margin: 0rem 0rem;
+}
+
+.Values-Para {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+
+.Values--Row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 24rem;
+}
+
+.Values-Members--Avatar {
+  margin-bottom: 2rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Values-Item--Title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.Values-Members--Desc {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+/**** BULLETS ****/
+
+.Bullet--Outer {
+  padding-top: 6rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Bullet--Container {
+margin-right: auto;
+margin-left: auto;
+}
+
+.Bullet--Heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.111rem;
+  text-align: center;
+  color: var(--mid-grey);
+  text-transform: uppercase;
+  margin: 0rem 0rem;
+}
+
+.Bullet--Row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 24rem;
+}
+
+.Bullet--List {
+  list-style: none;
+  white-space: nowrap;
+  padding: 1rem 0rem;
+}
+
+.Bullet--Item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.Bullet-Image {
+  padding-right: 1rem;
+}
+
+
+/**** TESTIMONIAL *****/
+
+.Testimonial--Outer {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.Testimonial--Container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Testimonial--Row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 24rem;
+}
+
+.Testimonial--Bg {
+  background-color: #3B3B3B;
+}
+
+.Testimonial--Text {
+  letter-spacing: 1px;
+  text-transform: initial;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  padding-top: 0;
+  padding-bottom: 20px;
+  font-family: "Montserrat";
+  line-height: 1.3em;
+  margin: 18px 0px;
+}
+
+.Testimonial-Person--Image {
+  padding-bottom: 2.1875rem;
+}
+
+.Testimonial-Person--About {
+  letter-spacing: 0px;
+  text-transform: initial;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 20px;
+  font-family: "Montserrat";
+  line-height: 1.3em;
+}
+
+/**** Success CTA *****/
+
+.Success-CTA--Outer {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.Success-CTA--Container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Success-CTA--H1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 0.11125rem;
+  color: var(--mid-grey);
+}
+
+.Success-CTA {
+  background-color: var(--medium-purple);
+  width: 20rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Success-CTA--Text {
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px 72px;
+}
+
+/******* GROWTH ITEMS *******/
+
+.Growth-Item--Outer {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Growth-Item-Alter-Bg {
+background-color: #3a3a3a;
+}
+
+.Growth-Item--Container {
+margin-right: auto;
+margin-left: auto;
+}
+
+.Growth-Item-Heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.111rem;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0rem 0rem;
+}
+
+.Growth-Item-Para {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+
+.Growth-Item--Row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  padding: 0rem 18rem;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+}
+
+.Growth-Item-Members--Avatar {
+  margin-bottom: 2rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Growth-Item-Item--Title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.Growth-Item-Members--Desc {
+  font-family: Helvetica;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}
+
+.mk-svg-icon {
+  fill: #ffffff;
+  width: 	3.75rem;
+  padding-bottom: 2rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/**** Experts CTA *****/
+
+.Experts-CTA--Outer {
+  padding-top: 6rem;
+  padding-bottom: 4.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.Experts-CTA--Container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Experts-CTA--H1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 0.11125rem;
+  text-align: center;
+  color: var(--mid-grey);
+  padding-bottom: 2rem;
+}
+
+.Experts-CTA {
+  background-color: var(--medium-purple);
+  width: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Experts-CTA--Text {
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px 72px;
+}
+
+
+/**** STATS *****/
+
+.Stats--Outer {
+  padding-top: 6rem;
+  padding-bottom: 4.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} 
+
+.Stats--Container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Stats--H1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 0.11125rem;
+  text-align: center;
+  color: var(--mid-grey);
+  padding-bottom: 2rem;
+}
+
+.Stats {
+  background-color: var(--medium-purple);
+  width: 20rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Stats--Text {
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px 72px;
+}
+
+
+/**** Final CTA *****/
+
+.Final-CTA--Outer {
+  padding-top: 4rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--medium-purple);
+} 
+
+.Final-CTA--Container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Final-CTA--H1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 0.11125rem;
+  color: #ffffff;
+}
+
+.Final-CTA {
+  background-color: #000;
+  width: 20rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Final-CTA--Text {
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 17px 72px;
+}
