@@ -826,6 +826,12 @@ margin-left: auto;
   margin-left: auto;
 }
 
+.Stats--Row {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  padding-bottom: 2rem;
+}
+
 .Stats--H1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
