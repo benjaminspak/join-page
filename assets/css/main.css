@@ -563,6 +563,21 @@ margin-left: auto;
   padding: 0rem 2rem;
 }
 
+.Testimonial--Text--Narrow {
+  letter-spacing: 0.0625rem;
+  text-transform: initial;
+  font-size: 1.875rem;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  padding-top: 0;
+  padding-bottom: 1.25rem;
+  font-family: "Montserrat";
+  line-height: 1.3em;
+  margin: 1.125rem 0px;
+  padding: 0rem 4rem;
+}
+
 .Testimonial-Person--Image {
   padding-bottom: 2.1875rem;
 }
