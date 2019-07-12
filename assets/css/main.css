@@ -56,16 +56,121 @@
 }
 
 .wrapper > * {
-  padding: 0px;
+  padding: 0rem;
   flex: 1 100%;
 }
 
 /****** NAV BAR *****/
 
+/* header */
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 4.375rem;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li {
+  vertical-align: middle;
+  line-height: 4.375rem;
+}
+
+.header li a {
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 340px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
   .Nav-Bar--logo {
     margin-left: 4.25rem;
     max-width: 13.75rem;
+    vertical-align: middle;
+    line-height: 4.375rem;
+    padding-top: 6px;
   }
+
 
   .Nav-Bar--li {
     height: 1.375rem;
@@ -75,15 +180,15 @@
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     color: var(--mid-grey);
     text-transform: uppercase;
     margin-left: 5rem;
   }
 
   .Nav-Bar--CTA {
-    width: 150px;
-    height: 50px;
+    width: 9.375rem;
+    height: 3.125rem;
     border-radius: 25px;
     border: solid 2px var(--dark-lavender);
     background-color: var(--dark-lavender);
@@ -92,12 +197,12 @@
 
   .Nav-Bar--CTA--Text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -131,7 +236,7 @@
 
   .Hero--Desc {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
@@ -151,7 +256,7 @@
   .CTA--Text {
     font-family: 'Montserrat', sans-serif;
     white-space: nowrap;
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 600;
     font-style: normal;
     font-stretch: normal;
@@ -159,7 +264,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    padding: 17px 72px;
+    padding: 1.0625rem 4.5rem;
   }
 
   .Hero-Image {
@@ -167,12 +272,6 @@
   }
 
   /****** SECTION ******/
-
-  @media (min-width: 576px) {
-    .Alternate-BG {
-      padding: 4rem 2rem;
-  } 
-  }
 
 .Section--Outer {
     padding: 6rem 1rem;
@@ -192,7 +291,7 @@
 }
 
 .Tight {
-  max-width: 960px;
+  max-width: 60rem;
 }
 
 .Section-Heading {
@@ -277,7 +376,7 @@
 
 .Team-Members--Desc {
   font-family: Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -365,7 +464,7 @@ margin-left: auto;
 
 .Values-Members--Desc {
   font-family: Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -465,17 +564,17 @@ margin-left: auto;
 }
 
 .Testimonial--Text {
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-transform: initial;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #fff;
   text-align: center;
   font-style: italic;
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   font-family: "Montserrat";
   line-height: 1.3em;
-  margin: 18px 0px;
+  margin: 1.125rem 0px;
 }
 
 .Testimonial-Person--Image {
@@ -486,26 +585,26 @@ margin-left: auto;
   letter-spacing: 0px;
   text-transform: initial;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff;
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   font-family: "Montserrat";
   line-height: 1.3em;
-  max-width: 200px;
+  max-width: 12.5rem;
 }
 
 .Testimonial-Person--About-2 {
   letter-spacing: 0px;
   text-transform: initial;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff;
   padding-top: 0;
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   font-family: "Montserrat";
   line-height: 1.3em;
-  max-width: 300px;
+  max-width: 18.75rem;
 }
 
 /**** Success CTA *****/
@@ -549,7 +648,7 @@ margin-left: auto;
 .Success-CTA--Text {
   font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -557,7 +656,7 @@ margin-left: auto;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  padding: 17px 72px;
+  padding: 1.0625rem 4.5rem;
 }
 
 /******* GROWTH ITEMS *******/
@@ -640,7 +739,7 @@ margin-left: auto;
 
 .Growth-Item-Members--Desc {
   font-family: Helvetica;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
@@ -704,7 +803,7 @@ margin-left: auto;
 .Experts-CTA--Text {
   font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -712,7 +811,7 @@ margin-left: auto;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  padding: 17px 72px;
+  padding: 1.0625rem 4.5rem;
 }
 
 
@@ -759,7 +858,7 @@ margin-left: auto;
 .Stats--Text {
   font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -767,7 +866,7 @@ margin-left: auto;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  padding: 17px 72px;
+  padding: 1.0625rem 4.5rem;
 }
 
 
@@ -813,7 +912,7 @@ margin-left: auto;
 .Final-CTA--Text {
   font-family: 'Montserrat', sans-serif;
   white-space: nowrap;
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -821,5 +920,5 @@ margin-left: auto;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  padding: 17px 72px;
+  padding: 1.0625rem 4.5rem;
 }

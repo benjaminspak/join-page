@@ -1,0 +1,7 @@
+/* Extra large devices (large desktops, 1500px and up) */
+@media only screen and (max-width: 1500px) {
+    .Nav-Bar--li {
+        font-size: 1.1rem;
+        margin-left: 2.75rem;
+    }
+} 
