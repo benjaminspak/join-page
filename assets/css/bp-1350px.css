@@ -12,6 +12,7 @@
     }
     .menu {
         text-align: center;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     }
     .Nav-Bar--logo {
         display: inline-block;
@@ -20,6 +21,21 @@
         margin-left: 2.25rem;
         margin-bottom: 1.25rem;
     }
+    .Hero--H1 {
+        font-size: 2.5rem;
+    }
+    .Hero-Container {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    .Hero-Container--Item-Left{
+        justify-content: center;	
+    }
+    .Hero-Container--Item-Right{
+        justify-content: center;	
+    }
+    
 } 
 
 /*** Mobile Nav Menu ****/

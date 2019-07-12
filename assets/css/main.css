@@ -13,6 +13,10 @@
   }
 
 
+a:hover {
+  text-decoration: none;
+}
+
 .light-grey {
   color: var(--light-grey);
 }
@@ -32,33 +36,13 @@
 
 /****** GENERAL *****/
 
-.flex-container{
-  display:flex;
-  flex-direction:row;
-}
-
-.flex-container > span{
-  flex-grow:1; 
-}
-
-.flex-container > .flex-item{
-  flex-grow:0;
-  width:50%;
-}
-
-.flex-container > .pad-left{
-  padding-left: 8%;
-}
 
 .wrapper {
-  display: flex;  
-  flex-flow: row wrap;
+  display: grid;  
+  
 }
 
-.wrapper > * {
-  padding: 0rem;
-  flex: 1 100%;
-}
+
 
 /****** NAV BAR *****/
 
@@ -211,16 +195,23 @@
 /****** HERO SECTION *****/
   .Hero-Container {
     margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .Hero--Left {
+  .Hero-Container--Item-Left {
+    justify-content: start;
+  }
+  
+  .Hero-Container--Item-Right {
+    justify-content: end;
+  }
+
+  .Hero-Container--Pad{
+    padding-left: 8%;
     padding-top: 8rem;
   }
-
-  .Hero--Right {
-
-  }
-
+ 
   .Hero--H1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
@@ -264,7 +255,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    padding: 1.0625rem 4.5rem;
+    padding: 1.0625rem 4rem;
   }
 
   .Hero-Image {
@@ -275,10 +266,8 @@
 
 .Section--Outer {
     padding: 6rem 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+
 }
 
 .Section-Alter-Bg {
@@ -350,14 +339,17 @@
 
 
 .Team-Members--Row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 4rem 24rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+}
+
+.Team-Members--Person {
+  margin: 2rem 2rem;
 }
 
 .Team-Members--Avatar {
   margin-bottom: 2rem;
-  display: flex;
+  display: grid;
   margin-left: auto;
   margin-right: auto;
 }
@@ -394,10 +386,8 @@
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+
 }
 
 .Values-Alter-Bg {
@@ -423,30 +413,20 @@ margin-left: auto;
   margin: 0rem 0rem;
 }
 
-.Values-Para {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.3125rem;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-
 .Values--Row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 24rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
 }
 
-.Values-Members--Avatar {
+.Values-Members--Img {
   margin-bottom: 2rem;
-  display: flex;
+  display: grid;
   margin-left: auto;
   margin-right: auto;
+}
+
+.Values-Item {
+  margin: 3rem 4rem;
 }
 
 .Values-Item--Title {
@@ -462,7 +442,7 @@ margin-left: auto;
   color: var(--black);
 }
 
-.Values-Members--Desc {
+.Values-Item--Desc {
   font-family: Helvetica;
   font-size: 1.125rem;
   font-weight: 300;
@@ -481,10 +461,8 @@ margin-left: auto;
   padding-bottom: 3.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+
 }
 
 .Bullet--Container {
@@ -507,15 +485,23 @@ margin-left: auto;
 }
 
 .Bullet--Row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 24rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+}
+
+.Bullet-Col--Left {
+  justify-content: start;
+}
+
+.Bullet-Col--Right {
+  justify-content: end;
 }
 
 .Bullet--List {
   list-style: none;
   white-space: nowrap;
-  padding: 1rem 0rem;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
 }
 
 .Bullet--Item {
@@ -528,6 +514,7 @@ margin-left: auto;
   letter-spacing: normal;
   margin-top: 1.5rem;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .Bullet-Image {
@@ -542,21 +529,19 @@ margin-left: auto;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+
 } 
 
 .Testimonial--Container {
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 3rem;
 }
 
 .Testimonial--Row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem 24rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 1fr;
 }
 
 .Testimonial--Bg {
@@ -575,6 +560,7 @@ margin-left: auto;
   font-family: "Montserrat";
   line-height: 1.3em;
   margin: 1.125rem 0px;
+  padding: 0rem 2rem;
 }
 
 .Testimonial-Person--Image {
@@ -614,10 +600,8 @@ margin-left: auto;
   padding-bottom: 4.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+
 } 
 
 .Success-CTA--Container {
@@ -656,7 +640,7 @@ margin-left: auto;
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  padding: 1.0625rem 4.5rem;
+  padding: 1.0625rem 0rem;
 }
 
 /******* GROWTH ITEMS *******/
@@ -666,10 +650,8 @@ margin-left: auto;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+
 }
 
 .Growth-Item-Alter-Bg {
@@ -709,17 +691,17 @@ margin-left: auto;
 
 
 .Growth-Item--Row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  padding: 0rem 18rem;
-  padding-top: 4rem;
-  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+}
+
+.Growth-Item {
+  padding: 4rem 3rem;
 }
 
 .Growth-Item-Members--Avatar {
   margin-bottom: 2rem;
-  display: flex;
+  display: grid;
   margin-left: auto;
   margin-right: auto;
 }
@@ -753,7 +735,7 @@ margin-left: auto;
   fill: #ffffff;
   width: 	3.75rem;
   padding-bottom: 2rem;
-  display: flex;
+  display: grid;
   margin-left: auto;
   margin-right: auto;
 }
@@ -766,10 +748,8 @@ margin-left: auto;
   padding-bottom: 4.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+
 } 
 
 .Experts-CTA--Container {
@@ -822,10 +802,8 @@ margin-left: auto;
   padding-bottom: 4.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+
 } 
 
 .Stats--Container {
@@ -877,10 +855,7 @@ margin-left: auto;
   padding-bottom: 3.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   background-color: var(--medium-purple);
 } 
 
