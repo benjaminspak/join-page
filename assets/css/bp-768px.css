@@ -10,4 +10,20 @@
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
+    .Growth-Item-Members--Desc {
+        font-size: 1.5rem;
+    }
+    .mk-svg-icon {
+        width: 4.75rem;
+    }
+    .Values-Item--Desc {
+        font-size: 1.5rem;
+    }
+    .Team-Members--Desc {
+        font-size: 1.5rem;
+    }
+    .CTA--Text {
+        font-size: 1.5rem;
+        padding: 1.0625rem 2rem;
+    }
  }

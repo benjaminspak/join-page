@@ -1,4 +1,24 @@
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media only screen and (max-width: 576px) { 
+    .Growth-Item--Outer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .Growth-Item-Members--Desc {
+        font-size: 1.5rem;
+    }
+    .mk-svg-icon {
+        width: 5.75rem;
+    }
+    .Values-Item--Desc {
+        font-size: 1.5rem;
+    }
+    .Team-Members--Desc {
+        font-size: 1.5rem;
+    }
+    .CTA--Text {
+        font-size: 1.5rem;
+        padding: 1.0625rem 2rem;
+    }
     
  }

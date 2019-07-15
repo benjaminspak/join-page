@@ -55,14 +55,11 @@ a {
 .header {
   background-color: #fff;
   position: fixed;
-  height: 4.375rem;
-  z-index: 3;
-  grid-column: 1 / -1;
   width: 100%;
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
 
 .content {
@@ -70,13 +67,6 @@ a {
 }
 
 /********* HEADER ************/
-
-.header--logo {
-  margin-left: 4.25rem;
-  max-width: 13.75rem;
-  margin-right: auto;
-}
-
 
 .header--link {
   height: 1.375rem;
@@ -89,13 +79,6 @@ a {
   letter-spacing: 0.0625rem;
   color: var(--mid-grey);
   text-transform: uppercase;
-  margin-left: 5rem;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.header--cta {
-  
 }
 
 .header--cta-button {
@@ -114,12 +97,143 @@ a {
   letter-spacing: 0.0625rem;
   color: #ffffff;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 
 
 
 /*** Mobile Nav Menu ****/
+  /* header */
+  
+  .header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+   
+    align-items: center;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 6px 20px;
+    text-decoration: none;
+    margin-top: 6px;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding-top: 6px;
+    text-decoration: none;
+    margin-left: 4.25rem;
+    max-width: 13.75rem;
+    margin-right: auto;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 340px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
 
+  
+  @media (min-width: 1350px) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+    .header--link {
+      
+    }
+  }
 
 
 
@@ -142,7 +256,7 @@ a {
   .Hero-Container--Item-Left {
     order: 0;
     justify-content: start;
-    width: 550px;
+    width: 700px;
   }
   
   .Hero-Container--Item-Right {
@@ -224,7 +338,7 @@ a {
 
 .Section-Heading {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -252,7 +366,7 @@ a {
 
 .Team-Heading {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -347,7 +461,7 @@ margin-left: auto;
 
 .Values-Heading {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -427,7 +541,7 @@ margin-left: auto;
 
 .Bullet--Heading {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -672,7 +786,7 @@ margin-left: auto;
 
 .Growth-Item-Heading {
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
