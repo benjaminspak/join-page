@@ -1,28 +1,23 @@
 /* Extra large devices (large desktops, 1500px and up) */
 @media only screen and (max-width: 1500px) {
     .Hero-Container--Item-Left {
-        width: 100%;
+        width: 50%;
         text-align: center;
         display: flex;
         flex-flow: column;
-        justify-content: center;
         order: 1;
     }
-    .Hero-Container--margin {
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-top: 1.5rem;
+    .Hero-Container--Item-Right {
+        width: 40%;
     }
-    .Hero--H1 {
-        text-align: center;
+    .Hero-Container--margin {
+        margin-left: 100px;
+        margin-top: 50px;
     }
     .Hero--Desc {
-        text-align: center;
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
     .Hero-CTA {
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 0rem;
     }
 } 

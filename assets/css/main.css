@@ -235,8 +235,6 @@ a {
     }
   }
 
-
-
 /******** CONTENT *********/
 
 
@@ -256,18 +254,19 @@ a {
   .Hero-Container--Item-Left {
     order: 0;
     justify-content: start;
-    width: 700px;
+    width: 50%;
   }
   
   .Hero-Container--Item-Right {
     order: 1;
     justify-content: end;
     margin-left: auto;
+    width: 40%;
   }
 
   .Hero-Container--margin {
-    margin-left: 8%;
-    margin-top: 8rem;
+    margin-left: 100px;
+    margin-top: 80px;
   }
  
   .Hero--H1 {
