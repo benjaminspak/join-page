@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/bp-1500px.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/bp-1350px.css">
@@ -14,21 +14,36 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <title>Home Page | Gallagher Edge</title>
 </head>
-<body class="container-fluid wrapper">
+<body>
+<div class="wrapper"><!-- START WRAPPER -->
+
 
     <header class="header">
-        <a href="" ><img class="Nav-Bar--logo img-fluid" src="assets/img/gallaher-edge-logo.png" /></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-   
-        <ul class="menu">
-            <li><a class="Nav-Bar--li" href="#">Insiders Edge</a></li>
-            <li><a class="Nav-Bar--li" href="#">Workshops</a></li>
-            <li><a class="Nav-Bar--li" href="#">Media</a></li>
-            <li><a class="Nav-Bar--li" href="#">Login</a></li>
-            <li><a href="#"><button class="Nav-Bar--CTA Nav-Bar--CTA--Text">Join Now!</button></a></li>
-        </ul>
+        <div class="header--logo">
+            <a href="" ><img class="img-fluid" src="assets/img/gallaher-edge-logo.png" /></a>
+        </div>
+        <div>
+            <a class="header--link" href="#">Insiders Edge</a></li>
+        </div>
+        <div>
+            <a class="header--link" href="#">Workshops</a></li>
+        </div>
+        <div>
+            <a class="header--link" href="#">Media</a></li>
+        </div>
+        <div>
+            <a class="header--link" href="#">Login</a></li>
+        </div>
+        <div class="header--cta">
+            <a href="#">
+                <button class="header--cta-button">Join Now!</button>
+            </a>
+        </div>
+
     </header>
+
+
+    <content class="content"><!-- START CONTENT -->
 
     
         <div class="Hero-Container">
@@ -41,7 +56,7 @@
             </div>
             
             <div class="Hero-Container--Item-Right">
-                <img class="img-fluid" src="./assets/img/gallaher-edge-product-hero-2-x@3x.png">
+                <img src="./assets/img/gallaher-edge-product-hero-2-x@3x.png" class="img-fluid">
             </div>
         </div>
 
@@ -56,11 +71,12 @@
 
         <div class="Section--Outer">
             <div class="Section--Container">
-                <h1 class="Team-Heading">Meet Our Team of Experts</h1>
-                <p class="Team-Para Greyish-Brown">They led the culture transformation team at KSC, following the Columbia disaster.</p>
+                <div class="team-header">
+                    <h1 class="Team-Heading">Meet Our Team of Experts</h1>
+                    <p class="Team-Para Greyish-Brown">They led the culture transformation team at KSC, following the Columbia disaster.</p>
+                </div>
                 
                 <div class="Team-Members--Row">
-                    <div class=""></div>
                     <div class="Team-Members--Person">
                         <img class="Team-Members--Avatar" width="124" height="124" src="assets/img/philip-headshot@3x.jpg" />
                         <h2 class="Team-Members--Name">Dr. Phillip T. Meade</h2>
@@ -76,7 +92,6 @@
                         <h2 class="Team-Members--Name">Ms. Gabriela Buich</h2>
                         <p class="Team-Members--Desc">Ms. Gabriela Buich is a master team builder, specializing in facilitating cultural transitions during mergers, acquisitions, and leadership changes.</p>
                     </div>
-                    <div class=""></div>
                 </div><!-- /.row -->
             </div>
         </div>
@@ -84,10 +99,10 @@
 
         <div class="Values--Outer Values-Alter-Bg">
             <div class="Values--Container">
-                <h1 class="Values-Heading">Our Core Values</h1>
-                
+                <div class="values-header">
+                    <h1 class="Values-Heading">Our Core Values</h1>
+                </div>
                 <div class="Values--Row">
-                    <div class=""></div>
                     <div class="Values-Item">
                         <img class="Values-Members--Img" width="144" src="./assets/img/if-business-work-6-2377638-copy-2@3x.png" />
                         <h2 class="Values-Item--Title">Power Of Choice</h2>
@@ -103,27 +118,30 @@
                         <h2 class="Values-Item--Title">Progress Over Perfection</h2>
                         <p class="Values-Item--Desc">Something done imperfectly is better than nothing done flawlessly. We operate better when we expect not perfection, but progress.</p>
                     </div>
-                    <div class=""></div>
                 </div><!-- /.row -->
             </div>
         </div>
 
         <div class="Bullet--Outer">
             <div class="Bullet--Container">
-                <h1 class="Bullet--Heading">Lead With Confidence & Ease</h1>
+                <div class="bullet-header">
+                    <h1 class="Bullet--Heading">Lead With Confidence & Ease</h1>
+                </div>
                 <div class="Bullet--Row">
-                    <div class=""></div>
-                    <div class="Bullet-Col--Left"><ul class="Bullet--List">
+                    <div class="Bullet-Col--Left">
+                        <ul class="Bullet--List">
                          <li class="Bullet--Item"><img src="./assets/img/bullet.jpg" class="Bullet-Image">Improve your company culture</li>
                          <li class="Bullet--Item"><img src="./assets/img/bullet.jpg" class="Bullet-Image">Increase clarity and decision making</li>
                          <li class="Bullet--Item"><img src="./assets/img/bullet.jpg" class="Bullet-Image">gain a more relaxed leadership style</li>
-                      </ul></div>
-                    <div class=""></div>
-                    <div class="Bullet-Col--Right"><ul class="Bullet--List">
+                      </ul>
+                    </div>
+                    <div class="Bullet-Col--Right">
+                        <ul class="Bullet--List">
                         <li class="Bullet--Item"><img src="./assets/img/bullet.jpg" class="Bullet-Image">build team trust and loyalty</li>
                         <li class="Bullet--Item"><img src="./assets/img/bullet.jpg" class="Bullet-Image">create a unified team</li>
                         <li class="Bullet--Item"><img src="./assets/img/bullet.jpg" class="Bullet-Image">have open & impactful conversations </li>
-                        </ul></div>
+                        </ul>
+                    </div>
                 </div><!-- /.row -->
             </div>
         </div>
@@ -131,15 +149,13 @@
         <div class="Testimonial--Outer Testimonial--Bg">
             <div class="Testimonial--Container">
                 <div class="Testimonial--Row">
-                    <div></div>
-                    <div class="">
+                    <div class="testimonial-person">
                         <img src="./assets/img/testimonial-image.jpg" class="Testimonial-Person--Image" width="200px" />
                         <p class ="Testimonial-Person--About-1"> – Chelsea Coster – Director of Sales and Operations at Nebbia Technology</p>
                     </div>
-                    <div class="">
+                    <div class="testimonial-quote">
                         <h2 class="Testimonial--Text">"I was surprised at how useful the videos were! Valuable information is packed into bite-sized videos that I can easily fit into my day. The powerful content boosts my effectiveness in all kinds of situations.”</h2>
                     </div>
-                    <div></div>
                 </div>
             </div>
         </div>
@@ -158,9 +174,10 @@
 
          <div class="Growth-Item--Outer Growth-Item-Alter-Bg">
             <div class="Growth-Item--Container">
-               <h1 class="Growth-Item-Heading">How We Support Our Growth</h1>
+                <div class="growth-header">
+                    <h1 class="Growth-Item-Heading">How We Support Our Growth</h1>
+                </div>
                <div class="Growth-Item--Row">
-                  <div></div>
                   <div class="Growth-Item">
                      <i class="mk-main-ico"><svg class="mk-svg-icon" data-name="mk-moon-support" data-cacheid="icon-5d27a2a297f4b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0c-141.385 0-256 114.615-256 256s114.615 256 256 256 256-114.615 256-256-114.615-256-256-256zm-96 256c0-53.02 42.98-96 96-96s96 42.98 96 96-42.98 96-96 96-96-42.98-96-96zm302.99 85.738l-88.71-36.745c6.259-15.092 9.72-31.638 9.72-48.993s-3.461-33.901-9.72-48.993l61.063-25.293 27.647-11.452c10.954 26.411 17.01 55.365 17.01 85.738 0 30.373-6.057 59.327-17.01 85.738zm-121.251-292.728l-36.745 88.71c-15.092-6.259-31.638-9.72-48.994-9.72s-33.901 3.461-48.993 9.72l-17.23-41.599-19.515-47.112c26.411-10.952 55.366-17.009 85.738-17.009 30.373 0 59.327 6.057 85.739 17.01zm-292.729 121.252l47.112 19.515 41.599 17.23c-6.259 15.092-9.721 31.638-9.721 48.993s3.461 33.901 9.72 48.993l-88.71 36.745c-10.953-26.411-17.01-55.365-17.01-85.738 0-30.373 6.057-59.327 17.01-85.738zm121.252 292.728l11.452-27.647 25.293-61.063c15.092 6.259 31.638 9.72 48.993 9.72s33.901-3.461 48.993-9.72l36.745 88.71c-26.411 10.952-55.365 17.01-85.738 17.01-30.372 0-59.327-6.057-85.738-17.01z"></path></svg></i>
                      <p class="Growth-Item-Members--Desc">We’re here to support your growth! You get access to our exclusive Slack community and a personalized response through our Ask a Coach feature.   </p>
@@ -178,7 +195,6 @@
                      <i class="mk-main-ico"><svg class="mk-svg-icon" data-name="mk-icon-group" data-cacheid="icon-5d27a2a29a863" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1792"><path d="M593 896q-162 5-265 128h-134q-82 0-138-40.5t-56-118.5q0-353 124-353 6 0 43.5 21t97.5 42.5 119 21.5q67 0 133-23-5 37-5 66 0 139 81 256zm1071 637q0 120-73 189.5t-194 69.5h-874q-121 0-194-69.5t-73-189.5q0-53 3.5-103.5t14-109 26.5-108.5 43-97.5 62-81 85.5-53.5 111.5-20q10 0 43 21.5t73 48 107 48 135 21.5 135-21.5 107-48 73-48 43-21.5q61 0 111.5 20t85.5 53.5 62 81 43 97.5 26.5 108.5 14 109 3.5 103.5zm-1024-1277q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181zm704 384q0 159-112.5 271.5t-271.5 112.5-271.5-112.5-112.5-271.5 112.5-271.5 271.5-112.5 271.5 112.5 112.5 271.5zm576 225q0 78-56 118.5t-138 40.5h-134q-103-123-265-128 81-117 81-256 0-29-5-66 66 23 133 23 59 0 119-21.5t97.5-42.5 43.5-21q124 0 124 353zm-128-609q0 106-75 181t-181 75-181-75-75-181 75-181 181-75 181 75 75 181z"></path></svg></i>
                      <p class="Growth-Item-Members--Desc">We focus on community-driven content. We host a live webinar each month to address your questions, take your feedback & tailor the learning experience to our members.</p>
                   </div>
-                  <div></div>
                </div><!-- /.row -->
             </div>
          </div>
@@ -198,17 +214,15 @@
         <div class="Testimonial--Outer Testimonial--Bg">
             <div class="Testimonial--Container">
                 <div class="Testimonial--Row">
-                    <div></div>
-                    <div class="">
-                        <img src="./assets/img/denise-reimer.jpg" class="Testimonial-Person--Image" width="300px" />
+                    <div class="testimonial-person-2">
+                        <img src="./assets/img/denise-reimer.jpg" class="Testimonial-Person--Image img-fluid" width="300px" />
                         <p class ="Testimonial-Person--About-2">– Denise Reimer – Implicit Career Search Practitioner at Implicit Solutions, Critical Care Coordinator BCEHS</p>
                     </div><!-- /.col-lg-6 -->
-                    <div class="">
+                    <div class="testimonial-quote-2">
                         <h2 class="Testimonial--Text--Narrow">"Finally, there is something available to those who may not be available to take a full workshop right away.</h2>
                     </br>
                         <h2 class="Testimonial--Text--Narrow">There is so much value here. The questions and suggestions on this month’s webinar were perfect as I had a few of them on my list. I’m excited for the new content.”</h2>
                     </div>
-                    <div></div>
                 </div><!-- /.row -->
             </div>
         </div>
@@ -218,7 +232,7 @@
                 <h1 class="Stats--H1">Scientifically driven results </h1>
                 <div class="Stats--Row">
                   <div></div>  
-                  <img src="./assets/img/stats-.png" width="800PX">
+                  <img src="./assets/img/stats-.png" class="img-fluid">
                   <div></div>
                </div>
             </div>
@@ -235,8 +249,8 @@
                </div>
             </div>
          </div>
-
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </content><!-- END CONTENT -->
+</div><!-- END WRAPPER -->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
 </body>
 </html>

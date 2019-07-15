@@ -1,18 +1,12 @@
 /* Extra large devices (large desktops, 1350px and up) */
 @media only screen and (max-width: 1350px) {
+ /*
     .Nav-Bar--li {
         font-size: 1rem;
         margin-left: 2.5rem;
     }
-    .header li {
-        line-height: 2.75rem;
-    }
     .Nav-Bar--CTA {
         margin: 0rem 0rem;
-    }
-    .menu {
-        text-align: center;
-        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     }
     .Nav-Bar--logo {
         display: inline-block;
@@ -29,31 +23,6 @@
         display: grid;
         grid-template-columns: 1fr;
       }
-    .Hero-Container--Item-Left{
-        justify-content: center;	
-    }
-    .Hero-Container--Item-Right{
-        justify-content: center;	
-    }
-    
+
+    */
 } 
-
-/*** Mobile Nav Menu ****/
-
-@media only screen and  (min-width: 84.375rem) {
-    .header li {
-      float: left;
-      line-height: 4.375rem;
-    }
-    .header li a {
-      padding: 20px 0px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-}
