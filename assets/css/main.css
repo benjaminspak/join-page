@@ -12,6 +12,10 @@
     --black: #000000;
 }
 
+html {
+  font-size: 16px;
+}
+
 .light-grey {
   color: var(--light-grey);
 }
@@ -126,25 +130,30 @@ a {
 
   .Hero-Container {
     margin-top: 4rem;
+    display: grid;
+  }
+
+  .Hero--Row {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .Hero-Container--Item-Left {
     order: 0;
     justify-content: start;
-    
+    width: 550px;
   }
   
   .Hero-Container--Item-Right {
     order: 1;
     justify-content: end;
-    width: 100%; 
+    margin-left: auto;
   }
 
-  .Hero-Container--Pad{
-    padding-left: 8%;
-    padding-top: 8rem;
+  .Hero-Container--margin {
+    margin-left: 8%;
+    margin-top: 8rem;
   }
  
   .Hero--H1 {
@@ -579,7 +588,7 @@ margin-left: auto;
 
 .testimonial-quote-2 {
   justify-content: end;
-  width: 50%;
+  width: 60%;
 }
 
 /**** Success CTA *****/
@@ -818,9 +827,10 @@ margin-left: auto;
 }
 
 .Stats--Row {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Stats--H1 {

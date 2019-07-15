@@ -1,11 +1,28 @@
 /* Extra large devices (large desktops, 1500px and up) */
 @media only screen and (max-width: 1500px) {
-  /*  .Nav-Bar--li {
-        font-size: 1.1rem;
-        margin-left: 2.75rem;
+    .Hero-Container--Item-Left {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        order: 1;
+    }
+    .Hero-Container--margin {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-top: 1.5rem;
     }
     .Hero--H1 {
-        font-size: 2.75rem;
+        text-align: center;
     }
-*/
+    .Hero--Desc {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .Hero-CTA {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 } 

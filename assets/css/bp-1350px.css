@@ -1,28 +1,17 @@
 /* Extra large devices (large desktops, 1350px and up) */
 @media only screen and (max-width: 1350px) {
- /*
-    .Nav-Bar--li {
-        font-size: 1rem;
-        margin-left: 2.5rem;
+    .Bullet--List {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
     }
-    .Nav-Bar--CTA {
-        margin: 0rem 0rem;
+    .Bullet-Col--Left {
+        padding: 0rem 1rem;
     }
-    .Nav-Bar--logo {
-        display: inline-block;
+    .Bullet-Col--Right {
+        padding: 0rem 1rem;
     }
-    .Nav-Bar--CTA {
-        margin-left: 2.25rem;
-        margin-bottom: 1.25rem;
+    .Growth-Item {
+        padding-top: 2rem;
+        padding-bottom: 0rem;
     }
-    .Hero--H1 {
-        font-size: 2.5rem;
-    }
-    .Hero-Container {
-        margin-top: 4rem;
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-
-    */
 } 

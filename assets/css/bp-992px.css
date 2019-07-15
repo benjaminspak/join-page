@@ -3,4 +3,45 @@
   /*  .Hero--H1 {
         font-size: 2rem;
     } */
+    .Hero--Desc {
+        padding: 0rem 3rem;
+        margin-top: 0rem;
+    }
+    .Section--Outer {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .Section-Para {
+        padding: 0rem 3rem;
+    }
+    .Team-Para {
+        padding: 0rem 3rem;
+    }
+    .Hero-CTA {
+        margin-top: 0rem;
+    }
+    .Team-Members--Person {
+        margin: 1.5rem 1.5rem;
+    }
+    .Values-Item {
+        margin: 1.5rem 1rem;
+    }
+    .Values--Outer {
+        padding-top: 4rem;
+    }
+    .Bullet--Outer {
+        padding-top: 4rem;
+    }
+    .Growth-Item--Outer {
+        padding-top: 2rem;
+    }
+    .Experts-CTA--Outer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .Stats--Outer {
+        padding-top: 3rem;
+    }
 } 

@@ -1,5 +1,13 @@
-
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    
+@media only screen and (max-width: 768px) { 
+    .testimonial-quote-2 {
+        width: 100%;
+    }
+    .testimonial-quote {
+        width: 100%;
+    }
+    .Bullet--List {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
  }
