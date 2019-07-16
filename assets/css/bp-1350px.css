@@ -1,8 +1,8 @@
 /* Extra large devices (large desktops, 1350px and up) */
 @media only screen and (max-width: 1350px) {
     .Bullet--List {
-        padding-top: 2rem;
-        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0rem;
     }
     .Bullet-Col--Left {
         padding: 0rem 1rem;
@@ -17,5 +17,8 @@
     .Hero-Container--margin {
         margin-left: 100px;
         margin-top: 40px;
+    }
+    .Bullet--Row {
+        margin-left: -20px;
     }
 } 
