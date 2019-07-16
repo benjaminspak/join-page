@@ -66,6 +66,11 @@ a {
   grid-column: 1 / -1;
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /********* HEADER ************/
 
 .header--link {
@@ -312,7 +317,8 @@ a {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
-    padding: 1.0625rem 4rem;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
   }
 
   /****** SECTION ******/
@@ -1032,4 +1038,161 @@ margin-left: auto;
   text-align: center;
   color: #ffffff;
   padding: 1.0625rem 4.5rem;
+}
+
+/****** HOME PAGE **************************************************************************/
+/****** Home Page - HEADER *****/
+
+.Home-Page--Hero-BG {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+
+  background-image: url(../img/home-page/gallaher-edge-hero-1-2-x@3x.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.Home-Page--Hero-Desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.58;
+  letter-spacing: normal;
+  color: var(--mid-grey);
+  margin-top: 3rem;
+  text-align: left;
+}
+
+/****** Home Page - OPTIONS SPLIT *****/
+
+.Option-Split--Outer {
+  padding-top: 6rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+}
+
+.Option-Split--Container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Option-Split--Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Option-Split-Col--Left {
+  justify-content: start;
+  padding: 1rem 4rem;
+  width: 450px;
+}
+
+.Option-Split-Col--Right {
+  justify-content: end;
+  padding: 1rem 4rem;
+  width: 450px;
+}
+
+.Option-Split--Heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.625rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.14;
+  letter-spacing: 0.111rem;
+  color: var(--mid-grey);
+  text-transform: uppercase;
+  margin: 0rem 0rem;
+  letter-spacing: 1.56px;
+  text-align: center;
+}
+
+.Option-Split--Desc {
+  font-family: Helvetica, sans-serif;
+  font-size: 	1.125rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--mid-grey);
+}
+
+.Option-Split--CTA-Button {
+  background-color: var(--medium-purple);
+  width: 250px;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+/***** Home Page -- MESSAGE FROM FOUNDER ***********/
+
+.Message-From-Founder--Container {
+  display: grid;
+}
+
+.Message-From-Founder--Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Message-From-Founder--BG {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  background-image: url(../img/home-page/laura-meet-the-founder.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.Message-From-Founder--Box {
+  margin-left: 300px;
+  margin-top: 80px;
+  max-width: 800px;
+}
+
+.Message-From-Founder--H1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Message-From-Founder--Desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.Message-From-Founder--Sig {
+  font-family: "Alex Brush";
+  font-size: 40px;
+  color: #ffffff;
+  margin-left: 20px;
 }
