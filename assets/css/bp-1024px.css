@@ -10,7 +10,7 @@
         width: 40%;
     }
     .Podcast-Desc {
-        width: 600px;
+        width: 80%;
         text-align: center;
     }
     .Message-From-Founder--Box {
@@ -25,7 +25,6 @@
     }
     .InPerson--Item-Right {
         width: 90%;
-        margin-left: 0rem;
         align-content: center;
         justify-content: center;
         display: flex;

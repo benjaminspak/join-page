@@ -1,5 +1,8 @@
 /* Extra large devices (large desktops, 1350px and up) */
 @media only screen and (max-width: 1350px) {
+    .Hero-Container--Item-Left {
+        width: 90%;
+    }
     .Bullet--List {
         padding-top: 0.5rem;
         padding-bottom: 0rem;
@@ -15,7 +18,7 @@
         padding-bottom: 0rem;
     }
     .Hero-Container--margin {
-        margin-left: 100px;
+        margin-left: 0px;
         margin-top: 40px;
     }
     .Bullet--Row {
@@ -25,17 +28,86 @@
         width: 600px;
         text-align: center;
     }
+    .Platform--Item-Right {
+        width: 80%;
+    }
     .InPerson--Item-Right {
-    
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
     .InPerson--Item-Left {
-
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
     .Message-From-Founder--Box {
-
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 60px;
+        width: 90%;
     }
     .FatMerch-quote {
         width: 90%;
     }
+    .InPerson-CTA {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Platform--H1 {
+        text-align: center;
+    }
+    .Platform--Desc {
+        text-align: center;
+    }
+    .Platform--List {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Platform--margin {
+        margin-left: 0px;
+    }
+    .Platform--Item-Left {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .Platform-CTA {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .InPerson--H1 {
+        text-align: center;
+    }
+    .InPerson--Desc {
+        text-align: center;
+    }
+    .InPerson--List {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .InPerson--Margin {
+
+    }
+    .Message-From-Founder--Box
 } 
