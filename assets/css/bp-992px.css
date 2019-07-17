@@ -44,4 +44,12 @@
     .Stats--Outer {
         padding-top: 3rem;
     }
+    .Podcast-Desc {
+        width: 600px;
+        text-align: center;
+    }
+    .Message-From-Founder--Box {
+
+        margin-top: 26px;
+    }
 } 

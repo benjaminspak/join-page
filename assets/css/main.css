@@ -260,6 +260,8 @@ a {
     order: 0;
     justify-content: start;
     width: 50%;
+    display: flex;
+    flex-direction: column;
   }
   
   .Hero-Container--Item-Right {
@@ -1094,12 +1096,16 @@ margin-left: auto;
   justify-content: start;
   padding: 1rem 4rem;
   width: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 .Option-Split-Col--Right {
   justify-content: end;
   padding: 1rem 4rem;
   width: 450px;
+  display: flex;
+  flex-direction: column;
 }
 
 .Option-Split--Heading {
@@ -1151,6 +1157,7 @@ margin-left: auto;
 .Message-From-Founder--BG {
   width: 100vw;
   height: 60vh;
+  padding-bottom: 40px;
   display: flex;
   background-image: url(../img/home-page/laura-meet-the-founder.png);
   background-size: cover;
@@ -1160,9 +1167,11 @@ margin-left: auto;
 }
 
 .Message-From-Founder--Box {
-  margin-left: 300px;
+  margin-left: 15%;
   margin-top: 80px;
   max-width: 800px;
+  display: flex;
+  flex-direction: column;
 }
 
 .Message-From-Founder--H1 {
@@ -1195,4 +1204,407 @@ margin-left: auto;
   font-size: 40px;
   color: #ffffff;
   margin-left: 20px;
+}
+
+/******* Home Page -- Platform CTA *********/
+
+.Platform--Container {
+  display: grid;
+}
+
+.Platform--Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Platform--Item-Left {
+  order: 0;
+  justify-content: start;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Platform--Item-Right {
+  order: 1;
+  justify-content: end;
+  margin-left: auto;
+  width: 40%;
+}
+
+.Platform--margin {
+  margin-left: 15%;
+  margin-top: 80px;
+}
+
+.Platform--H1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: 1.14;
+  letter-spacing: 1.56px;
+  text-align: left;
+  color: var(--mid-grey);
+}
+
+.Platform--Desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: left;
+}
+
+.Platform--List {
+  padding-bottom: 1rem;
+}
+
+.Platform--List-Item {
+  font-family: Helvetica;
+  font-size: 	1.225rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.52;
+  letter-spacing: normal;
+}
+
+.Platform-CTA {
+  background-color: var(--medium-purple);
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+.Platform--Text {
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+}
+
+/******* Home Page -- Platform CTA *********/
+
+.InPerson--Container {
+  display: grid;
+  margin-top: 6rem;
+}
+
+.InPerson--Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.InPerson--Item-Left {
+  order: 0;
+  justify-content: start;
+  width: 40%;
+}
+
+.InPerson--Item-Right {
+  order: 1;
+  justify-content: end;
+  margin-left: 8rem;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.InPerson--Margin {
+  margin-top: 80px;
+}
+
+.InPerson--H1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: 1.14;
+  letter-spacing: 1.56px;
+  text-align: left;
+  color: var(--mid-grey);
+}
+
+.InPerson--Desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: left;
+}
+
+.InPerson--List {
+  padding-bottom: 1rem;
+}
+
+.InPerson--List-Item {
+  font-family: Helvetica;
+  font-size: 	1.225rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.52;
+  letter-spacing: normal;
+}
+
+.InPerson-CTA {
+  background-color: var(--medium-purple);
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+.InPerson--Text {
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+}
+
+/**** TESTIMONIAL *****/
+
+.FatMerch--Outer {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+} 
+
+.FatMerch--Container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 3rem;
+}
+
+.FatMerch--Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.FatMerch--Bg {
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+}
+
+.FatMerch--Text {
+  letter-spacing: 0.0625rem;
+  text-transform: initial;
+  font-size: 1.25rem;
+  color: #000000;
+  text-align: center;
+  font-style: italic;
+  padding-top: 0;
+  font-family: "Montserrat";
+  line-height: 1.3em;
+  margin: 1.125rem 0px;
+  padding: 0rem 2rem;
+  font-weight: 300;
+}
+
+.FatMerch--Text--Narrow {
+  letter-spacing: 0.0625rem;
+  text-transform: initial;
+  font-size: 1.875rem;
+  color: #000000;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 1.25rem;
+  font-family: "Montserrat";
+  line-height: 1.3em;
+  margin: 1.125rem 0px;
+  padding: 0rem 4rem;
+  font-weight: 400;
+}
+
+.FatMerch-person {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.FatMerch-quote {
+  justify-content: end;
+  width: 50%;
+}
+
+.FatMerch-Person--Image {
+  padding-bottom: 0rem;
+  border-radius: 50%;
+}
+
+.FatMerch-Person--About-1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #000000;
+  padding-top: 0;
+  font-family: "Montserrat";
+  line-height: 1.3em;
+  max-width: 12.5rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+
+.FatMerch-person-2 {
+  justify-content: start;
+}
+
+.FatMerch-quote-2 {
+  justify-content: end;
+  width: 60%;
+}
+
+
+/******* Home Page -- LOGOS *********/
+
+.Logo--Outer {
+  padding: 4rem 1rem;
+  display: flex;
+}
+
+.Logo--Container {
+margin-right: auto;
+margin-left: auto;
+}
+
+.Logo--Row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Logo--Item {
+  padding: 0rem 2rem;
+}
+
+
+
+/****** PODCAST SECTION *****/
+
+.PodCast-Container {
+  display: grid;
+}
+
+.PodCast-Col {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PodCast-Graphic {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PodCast-H1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  line-height: 1.25;
+  letter-spacing: 0.11125rem;
+  text-align: left;
+  color: var(--mid-grey);
+}
+
+.PodCast-CTA {
+  background-color: #ffffff;
+  width: 20rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PodCast-CTA--Text {
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #666666;
+  padding: 1.5rem 0rem;
+  text-transform: uppercase;
+}
+
+.PodCast-BG {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  background-image: url(../img/home-page/laura-sitting-at-chair.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+.Podcast-BG--Opacity {
+  background-color:#000000;
+  background-attachment: fixed;
+  opacity:.4;
+  width: 100vw;
+  height: 50vh;
+}
+
+.PodCast-Desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.58;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-top: 3rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
 }

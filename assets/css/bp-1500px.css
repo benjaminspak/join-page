@@ -20,4 +20,15 @@
     .Hero-CTA {
         margin-top: 0rem;
     }
+    .Podcast-Desc {
+        width: 600px;
+        text-align: center;
+    }
+    /*.Platform--Item-Right {
+        XXXXX
+    }*/
+    .Message-From-Founder--Box {
+
+        margin-top: 70px;
+    }
 } 

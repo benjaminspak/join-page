@@ -9,4 +9,36 @@
     .Hero-Container--Item-Right {
         width: 40%;
     }
-}
+    .Podcast-Desc {
+        width: 600px;
+        text-align: center;
+    }
+    .Message-From-Founder--Box {
+
+        margin-top: 45px;
+    }
+    .InPerson--Row {
+        justify-content: center;
+    }
+    .InPerson--Margin {
+        
+    }
+    .InPerson--Item-Right {
+        width: 90%;
+        margin-left: 0rem;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .InPerson--H1 {
+        text-align: center;
+    }
+    .InPerson--Desc {
+        text-align: center;
+    }
+    .Platform-CTA {
+        justify-content: center;
+
+    }
+}    

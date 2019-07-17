@@ -21,4 +21,21 @@
     .Bullet--Row {
         margin-left: -20px;
     }
+    .Podcast-Desc {
+        width: 600px;
+        text-align: center;
+    }
+    .InPerson--Item-Right {
+    
+    }
+    .InPerson--Item-Left {
+
+    }
+    .Message-From-Founder--Box {
+
+        margin-top: 60px;
+    }
+    .FatMerch-quote {
+        width: 90%;
+    }
 } 
