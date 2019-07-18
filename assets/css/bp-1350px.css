@@ -109,5 +109,8 @@
     .InPerson--Margin {
 
     }
-    .Message-From-Founder--Box
+    .Message-From-Founder--Box {}
+    .Home-Page--Hero-Desc {
+        text-align: center;
+    }
 } 
